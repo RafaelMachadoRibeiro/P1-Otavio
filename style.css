@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b3d5e;
+    padding: 1rem 2rem;
+}
+
+.header-image {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.hero {
+    background-color: #f8f3ef;
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.hero h1 {
+    color: #8b3d5e;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+.grid-section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background-color: #f5ece9;
+    padding: 1rem;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid #8b3d5e;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #8b3d5e;
+    font-weight: bold;
+}
+
+.grid-item:hover {
+    background-color: #f1d4d8;
+}
+
+footer {
+    background-color: #8b3d5e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .grid-section {
+        padding: 1rem;
+    }
+
+    .grid-item {
+        padding: 1rem;
+    }
+}
